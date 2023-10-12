@@ -17,9 +17,9 @@ class TestWidget extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: Text(
-          'Hello Flutter',
+          'Hello Flutter!',
           style: TextStyle(
-            fontSize: 40,
+            fontSize: 60,
             color: Colors.black,
           ),
         ),
