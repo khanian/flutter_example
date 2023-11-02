@@ -7,15 +7,15 @@ void main() {
         actions: [
           IconButton(onPressed: () {
             print('Tab!');
-          }, icon: Icon(Icons.home)),
-          Icon(Icons.play_arrow),
+          }, icon: const Icon(Icons.home)),
+          const Icon(Icons.play_arrow),
         ],
         centerTitle: false,
-        title: Text('This is App bar'),
+        title: const Text('This is App bar'),
       ),
-      body: TestWidget(),
+      body: const TestWidget(),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.bug_report),
+        child: const Icon(Icons.bug_report),
         onPressed: () {
           print('Tab! FAB!');
         },
@@ -29,7 +29,7 @@ class TestWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Center(
         child: Text(
           'Hello Flutter!',
